@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  gap: $spacer-9;
+}
+
+.header span {
+  font-size: 14px;
+}
+
+.navbar-brand-img {
+  width: 100px;
+}
+
+.navbar-nav .nav-link {
+  color: $color-blue;
+  font-size: smaller;
+
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+// responsive design  for mobile 
+
+@include mobile {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav .nav-link {
+    margin: $spacer-4 0;
+  }
+}
+
+// responsive design for mobile 
+
+@include mobile {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-brand-img {
+    width: 50%;
+  }
+}
+
+
+// responsive design for tablet
+
+@include tablet {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: $spacer-5;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0 $spacer-5;
+  }
+}

@@ -1,0 +1,90 @@
+.header {
+
+  &__icons {
+    gap: 14px;
+    display: flex;
+    left: $spacer-7;
+    position: relative;
+  }
+
+  &__dot {
+    color: $color-grey;
+  }
+
+  &__img {
+    width: $spacer-6;
+  }
+
+  &__list {
+    display: flex;
+    gap: $spacer-8;
+    margin-left: 290px;
+  }
+
+  &__items {
+    color: $color-lightblue;
+  }
+
+
+  &__items-text {
+    color: $color-black;
+  }
+
+  &__items-btn {
+    background-color: $color-blue;
+    color: $color-white;
+    font-size: 11px;
+    padding: 5px 13px;
+  }
+}
+
+// Responsive design for mobile 
+
+@include mobile {
+  .header {
+    font-size: 14px;
+    display: table;
+
+
+    &__icons {
+      margin-bottom: $spacer-5;
+    }
+
+    &__list {
+      margin-left: 0;
+    }
+
+    &__items-btndiv {
+      text-align: center;
+    }
+  }
+
+  .header span {
+    font-size: 11px;
+  }
+}
+
+// Responsive design for tablet
+
+@include tablet {
+  .header {
+    font-size: 14px;
+
+
+    &__icons {
+      top: 16px;
+    }
+
+    &__list {
+      margin-left: 0;
+    }
+
+    &__items-btndiv {
+      text-align: center;
+    }
+  }
+
+  .header span {
+    font-size: 15px;
+  }
+}

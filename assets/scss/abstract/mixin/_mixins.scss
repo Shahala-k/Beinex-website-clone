@@ -1,0 +1,19 @@
+@mixin contentproperty {
+
+    font-size: x-small;
+    line-height: 15px;
+    color: $color-white;
+}
+
+
+@mixin mobile {
+    @media screen and (max-width: 630px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 700px) and (max-width: 1024px) {
+        @content;
+    }
+}

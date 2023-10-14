@@ -1,0 +1,36 @@
+.Approach {
+    display: flex;
+    background-color: $color-darkblue;
+    height: 414px;
+    ;
+
+}
+
+.outer {
+    display: flex;
+    gap: 45px;
+}
+
+//responsive design for mobile 
+
+@include mobile {
+    .outer {
+        display: grid;
+
+    }
+
+    .Approach {
+        position: relative;
+        top: -36px;
+        left: 14px;
+    }
+}
+
+//responsive design for tablet
+
+@include tablet {
+    .Approach {
+        top: 48px;
+        position: relative;
+    }
+}

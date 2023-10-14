@@ -1,0 +1,49 @@
+.footer {
+   
+    top: -9rem;
+    padding-left: 45px;
+    position: relative;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: $color-lightgrey;
+
+    &__section {
+        display: flex;
+        gap: 22px;
+
+    }
+
+}
+
+//responsive design for mobile
+
+@include mobile {
+    .footer {
+        left: 26px;
+        top: 27rem;
+    padding-left: 45px;
+    padding-right: 45px;
+    position: relative;
+
+        &__section {
+            display: contents;
+            
+        }
+    }
+}
+
+//responsive design for tablet
+
+@include tablet {
+    .footer {
+        top: 9rem;
+        left: 28px;
+     position: relative;
+
+        &__section {
+            display: contents;
+            
+        }
+    }
+}

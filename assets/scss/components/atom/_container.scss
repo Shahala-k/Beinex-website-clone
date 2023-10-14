@@ -1,0 +1,118 @@
+.container {
+    
+    background-color: $color-offwhite;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    top: -10rem;
+
+    &__head {
+        font-weight: 800;
+        top: 17px;
+        position: inherit;
+        color: $color-darkblue;
+    }
+
+    &__text {
+        color: $color-darkgrey;
+    }
+}
+
+.customcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 363px;
+    height: 300px;
+
+    &__img {
+        width: 54px;
+        position: relative;
+        top: 26px;
+        left: 25px;
+        float: left;
+
+    }
+
+
+    &__container {
+        padding: $spacer-1 16px;
+    }
+
+    &__container-head {
+        color: $color-darkblue;
+        float: left;
+        font-size: 15px;
+        left: 45px;
+        position: relative;
+        top: $spacer-7;
+        line-height: $spacer-6;
+        font-weight: 800;
+    }
+
+    &__container-text {
+        font-size: 14px;
+        position: relative;
+        top: 49px;
+        float: left;
+        left: $spacer-2;
+    }
+}
+
+
+.customcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+//responsive design for mobile
+
+@include mobile {
+    
+    .container {
+
+        position: relative;
+        top: 26rem;
+        left: 39px;
+
+        &__head {
+            font-weight: 800;
+            top: 17px;
+            position: inherit;
+            color: $color-darkblue;
+        }
+
+        &__text {
+            font-size: 11px;
+        }
+    }
+}
+
+//responsive design for tablet
+
+@include tablet {
+
+    .container {
+        top: 4rem;
+
+        &__text {
+            font-size: 21px;
+        }
+    }
+
+    .customcard {
+
+        width: 430px;
+        height: 350px;
+        left: $spacer-8;
+        position: relative;
+
+        &__container-head {
+
+            font-size: $spacer-6;
+            line-height: $spacer-7;
+        }
+
+        &__container-text {
+            font-size: 17px;
+        }
+    }
+}

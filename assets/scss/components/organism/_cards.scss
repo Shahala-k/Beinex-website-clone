@@ -1,0 +1,23 @@
+.cards {
+    display: flex;
+    gap: $spacer-7;
+    margin-left: 16px;
+}
+
+
+//responsive design for mobile 
+
+@include mobile {
+    .cards {
+        display: contents;
+        left: 0px;
+    }
+}
+
+//responsive design for tablet 
+
+@include tablet {
+    .cards {
+        display: contents;
+    }
+}

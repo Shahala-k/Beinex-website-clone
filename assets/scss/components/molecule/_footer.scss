@@ -1,0 +1,53 @@
+.footer {
+
+    &__section-content {
+        width: 203px;
+        line-height: 25px;
+        top: $spacer-6;
+        position: relative;
+        font-size: 12px;
+        padding: 16px;
+
+    }
+
+    &__section-contentimg {
+        width: $spacer-6;
+    }
+
+    &__section-contenthead {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+}
+
+//responsive design for mobile
+
+@include mobile {
+    .footer {
+        &__section-content {
+            position: relative;
+            left: 65px;
+        }
+    }
+}
+
+//responsive design for tablet
+
+@include tablet {
+    .footer {
+        &__section-content {
+            position: relative;
+            left: 185px;
+        }
+
+        &__section-contenthead {
+            font-size: 23px;
+        }
+
+        &__section-contenttext {
+            font-size: 17px;
+            width: 400px;
+        }
+    }
+}

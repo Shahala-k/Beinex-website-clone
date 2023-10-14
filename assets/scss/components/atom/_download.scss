@@ -1,0 +1,207 @@
+.Advanced {
+
+    &__head {
+        font-size: 14px;
+        line-height: $spacer-12;
+        letter-spacing: 0.18em;
+    }
+
+    &__line {
+        border-top: $spacer-2 solid $color-darkblue;
+        width: 257px;
+        left: 244px;
+        top: -43px;
+        position: relative;
+    }
+
+    &__subhead {
+        font-size: $spacer-6;
+        font-weight: 800;
+        line-height: $spacer-1;
+        margin-top: -20px;
+        color: $color-darkblue;
+    }
+
+    &__text {
+
+        position: relative;
+        font-size: 15px;
+    }
+
+    &__download {
+        width: 272px;
+        height: 190px;
+        text-align: center;
+        position: relative;
+        top: 25px;
+        left: -22px;
+    }
+
+
+
+    &__download-text {
+        margin-top: -115px;
+        font-weight: 800;
+    }
+
+    &__download-btn {
+        padding: $spacer-4;
+        color: $color-white;
+        width: 170px;
+        background-color: $color-darkblue;
+    }
+
+}
+
+#download-icon {
+    color: #33a3e8;
+    font-size: 65px;
+    top: 36px;
+    position: absolute;
+}
+
+// responsive design for mobile
+
+@include mobile {
+    .outer {
+        display: block;
+    }
+
+    .Advanced {
+
+        &__head {
+            font-size: 14px;
+            left: 15px;
+            position: relative;
+        }
+
+        &__line {
+            border-top: 2px solid;
+            width: 124px;
+            left: 210px;
+            top: -43px;
+            position: relative;
+        }
+
+        &__subhead {
+
+            line-height: 38px;
+            margin-left: $spacer-5;
+            font-size: 17px;
+            top: -22px;
+            position: relative;
+
+        }
+
+        &__text {
+            margin-left: 45px;
+            font-size: 19px;
+            top: -45px;
+
+        }
+
+        &__download {
+            position: relative;
+            left: 45px;
+            top: -62px;
+            width: 352px;
+        }
+
+        &__download-img {
+            height: 190px;
+        }
+
+        &__download-text {
+            position: relative;
+            top: $spacer-1;
+            left: 11px;
+            font-size: 17px;
+        }
+
+        &__download-btn {
+            position: relative;
+            top: 0px;
+        }
+    }
+
+    #download-icon {
+        font-size: 77px;
+        left: 144px;
+
+    }
+}
+
+// responsive design for tablet
+
+@include tablet {
+
+    .outer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Advanced {
+        width: 100%;
+        margin: 0 auto;
+        padding: $spacer-6;
+
+        &__head {
+            margin-top: -23px;
+            font-size: $spacer-6;
+
+        }
+
+        &__line {
+            left: 309px;
+            position: relative;
+        }
+
+        &__subhead {
+            font-size: 29px;
+            font-weight: 800;
+            top: 15px;
+            position: relative;
+        }
+
+        &__text {
+            font-size: 31px;
+            top: $spacer-7;
+        }
+
+        &__download {
+            width: 400px;
+            text-align: center;
+            top: 0px;
+            left: 105px;
+            font-size: 25px;
+            height: 248px;
+        }
+
+        &__download-img {
+            height: 298px;
+            top: -35px;
+            position: relative;
+        }
+
+        &__download-text {
+            font-size: 26px;
+            position: relative;
+            top: -4rem;
+            left: 39px;
+        }
+
+        &__download-btn {
+            padding: 18px;
+            width: 256px;
+            position: relative;
+            top: -81px;
+            left: 53px;
+        }
+    }
+
+    #download-icon {
+        font-size: 110px;
+        top: 14px;
+        position: absolute;
+    }
+}

@@ -1,0 +1,36 @@
+.requestform {
+    &__container {
+    padding: $spacer-9;
+    display: flex;
+    position: relative;
+    top: -8rem;
+}
+}
+
+// responsive design for mobile
+
+@include mobile {
+    .requestform {
+        &__container {
+        flex-direction: column;
+        padding: $spacer-5;
+        position: relative;
+        top: 27rem;
+        left: 53px;
+    }
+    }
+}
+
+// responsive design for tablet
+
+@include tablet {
+    .requestform {
+        &__container {
+        flex-direction: column;
+        padding: $spacer-5;
+        position: relative;
+        top: 6rem;
+        left: 53px;
+    }
+    }
+}

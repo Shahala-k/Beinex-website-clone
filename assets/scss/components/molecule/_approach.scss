@@ -1,0 +1,75 @@
+.Approach {
+
+    &__process {
+        background-color: $color-skyblue;
+        color: $color-white;
+        padding: -41px;
+        width: 236px;
+        position: relative;
+        left: 52px;
+        font-size: 12px;
+        top: -281px;
+    }
+
+    &__process-img,
+    &__process-text {
+        left: 30px;
+        position: inherit;
+        top: $spacer-7;
+
+    }
+
+    &__process-img {
+        width: 42px;
+    }
+
+    &__process-text2 {
+        position: inherit;
+        left: $spacer-7;
+        color: $color-grey;
+    }
+}
+
+// responsive design for mobile
+
+@include mobile {
+
+    .Approach {
+
+        &__process {
+
+            left: 44px;
+            top: -30px;
+            color: $color-white;
+            padding: 12px;
+            width: 330px;
+        }
+
+        &__process-text {
+            font-size: 26px;
+        }
+
+        &__process-text2 {
+            color: $color-white;
+            font-size: 18px;
+        }
+    }
+}
+
+//responsive design for tablet  
+
+@include tablet {
+    .Approach {
+        &__process {
+            width: 297px;
+            position: relative;
+            left: 35px;
+            font-size: 17px;
+            top: 0px;
+        }
+
+        &__process-text {
+            font-size: $spacer-7;
+        }
+    }
+}

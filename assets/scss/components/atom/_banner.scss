@@ -1,0 +1,126 @@
+.carousel-caption {
+    display: flex;
+    top: 0;
+    left: 3%;
+    right: 38%;
+    text-align: left;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.carousel-head {
+    font-weight: 700;
+    font-size: 21px;
+    padding-top: 0.75rem;
+    line-height: 36px;
+    left: $spacer-7;
+    margin-left: -118px;
+    float: left;
+
+}
+
+.carousel-content {
+    font-size: 14px;
+    float: left;
+    position: absolute;
+    top: 119px;
+    left: -121px;
+    line-height: 27px;
+}
+
+.carousel-button-pre,
+.carousel-button-next {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 3%;
+}
+
+.carousel-button-next {
+    left: 6%;
+}
+
+#carousel-img {
+    height: 300px;
+    width: 100%;
+}
+
+.carousel-icon {
+    width: 20px;
+    background: $color-white;
+}
+
+#schedule1 {
+    font-size: 24px;
+    color: #14bcfd;
+    position: absolute;
+    left: 19px;
+    right: auto;
+    float: left;
+    width: $spacer-6;
+}
+
+#schedule2 {
+    font-size: 19px;
+    color: #14bcfd;
+    position: absolute;
+    left: 19px;
+    float: left;
+    left: $spacer-9;
+
+}
+
+//responsive design for mobile
+
+@include mobile {
+    .carousel-caption {
+        flex-direction: column;
+        right: 5%;
+        justify-content: center;
+    }
+
+    .carousel-head {
+        font-size: 16px;
+        padding: 0;
+        top: -56px;
+        position: relative;
+    }
+
+    .carousel-content {
+        font-size: 14px;
+        float: left;
+        position: absolute;
+        top: 125px;
+        left: -12px;
+        line-height: $spacer-6;
+    }
+
+    .carousel-button-pre,
+    .carousel-button-next {
+        visibility: hidden;
+    }
+
+}
+
+//responsive design for tablet
+
+@include tablet {
+
+    .carousel-head {
+        left: 55px;
+        position: relative;
+    }
+
+    .carousel-content {
+        font-size: 16px;
+        left: -4rem;
+    }
+
+    .carousel-button-pre,
+    .carousel-button-next {
+        visibility: hidden;
+    }
+
+}

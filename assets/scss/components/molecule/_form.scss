@@ -1,0 +1,97 @@
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 43%;
+    border: 1px solid $color-lightgrey;
+    font-size: 14px;
+    color: #666666;
+    background-position: 96% $spacer-5;
+    background-repeat: no-repeat;
+    padding: 8px $spacer-6  $spacer-4 15px;
+    margin: $spacer-5 $spacer-5  $spacer-5 0;
+}
+
+textarea {
+    width: 88%;
+    resize: none;
+}
+
+
+.line {
+    border-left: $spacer-1 solid #cacaca;
+    height: 320px;
+    opacity: 50%;
+}
+
+.content {
+    padding: 0 90px;
+    width: 40%;
+
+    &__head {
+        color: $color-darkblue;
+        font-weight: 800;
+        font-size: $spacer-6;
+        line-height: 29px;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: $color-black;
+        opacity: 50%;
+
+    }
+}
+
+// responsive design for mobile
+
+@include mobile {
+
+    .line {
+        display: none;
+    }
+
+    .content {
+        padding: 0;
+        width: 100%;
+        position: relative;
+        top: 16px;
+
+        &__head {
+            font-size: 17px;
+            line-height: 26px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+}
+
+
+// responsive design for tablet
+
+@include tablet {
+
+    .line {
+        display: none;
+    }
+
+    .content {
+        padding: 0;
+        width: 100%;
+        position: relative;
+        top: 16px;
+
+        &__head {
+            font-size: 28px;
+            line-height: 44px;
+        }
+
+        &__text {
+            font-size: 27px;
+        }
+    }
+
+}

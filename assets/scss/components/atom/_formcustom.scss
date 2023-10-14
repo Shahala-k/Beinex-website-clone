@@ -1,0 +1,79 @@
+.requestform  {
+    
+    &__formcontents{
+    width: 60%;
+    }
+    &__formcontents-head {
+font-weight: 800;
+
+        color: $color-darkblue;
+        font-size: 23px;
+    }
+
+    &__formcontents-name {
+        background-image: url("../images/username.png");
+    }
+
+    &__formcontents-email {
+        background-image: url("../images/email.png");
+    }
+
+    &__formcontents-country {
+        background-image: url("../images/globe.png");
+    }
+
+    &__formcontents-phone {
+        background-image: url("../images/phone.png");
+    }
+
+    &__formcontents-company {
+        background-image: url("../images/company.png");
+    }
+
+    &__formcontents-jobrole {
+        background-image: url("../images/jobrole.png");
+    }
+
+    &__formcontents-message {
+        background-image: url("../images/message.png");
+    }
+
+    &__formcontents-button {
+        background-image: url("../images/rightarrow.svg");
+        background-color: $color-skyblue;
+        border: none;
+        color: $color-white;
+        width: 130px;
+        padding: 12px;
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: 80% $spacer-5;
+    }
+}
+
+// responsive design for mobile
+
+
+@include mobile {
+    
+    .requestform {
+
+        &__formcontents {
+        width: 100%;
+    }
+
+}
+}
+
+// responsive design for tablet
+
+
+@include tablet {
+    .requestform {
+
+        &__formcontents {
+        width: 100%;
+    }
+
+}
+}
